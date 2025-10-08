@@ -19,18 +19,37 @@
 
   <main>
     <h1>Contato</h1>
-    <form>
-      <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="nome"><br><br>
+    <form id="Contato"action="https://formsubmit.co/vitor.alves.versiani@gmail.com" method="POST">
+        <input 
+            type="text" 
+            id="Nome" 
+            name="name" 
+            placeholder="Nome completo" 
+            required 
+        />
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+        <input 
+            type="email" 
+            id="Email" 
+            name="email" 
+            placeholder="Seu melhor e-mail" 
+            required 
+        />
 
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem"></textarea><br><br>
+        <textarea 
+            id="Mensagem" 
+            name="message" 
+            rows="6" 
+            placeholder="Escreva sua mensagem" 
+            required
+        ></textarea>
 
-      <input type="submit" value="Enviar">
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+        <input type="hidden" name="_subject" value="Novo contato via site">
+        <input type="hidden" name="_captcha" value="false">
+       <button type="submit" id="Enviar">Enviar</button>
     </form>
+    <p>Numero de contato: (41) 99108-5080</p>
   </main>
 </body>
 </html>

@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formação - Vitor Alves</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
   <nav>
     <ul>
@@ -17,14 +19,31 @@
     </ul>
   </nav>
 
-  <main>
-    <h1>Formação</h1>
-    <p>Análise e Desenvolvimento de Sistemas na UNINTER. (cursando) </p>
-    <p>Ensino Médio completo. (2022) </p>
-    <p>Idiomas: Português (nativo).</p>
-    <h1> cursos </h1>
-    <p> Auxiliar de informática (2025).</p>
-    <p> Jornada FullStack Hashtag (2025). </p>
+  <main data-aos="fade-up">
+    <h1 id="titulo"></h1>
+
+    <section class="formacao" data-aos="zoom-in" data-aos-delay="200">
+      <h2> Formação Acadêmica</h2>
+      <p><strong>Análise e Desenvolvimento de Sistemas</strong> — UNINTER (Cursando)</p>
+      <p><strong>Ensino Médio</strong> — Concluído em 2022</p>
+    </section>
+
+    <section class="idiomas" data-aos="zoom-in" data-aos-delay="400">
+      <h2> Idiomas</h2>
+      <p>Português — Nativo</p>
+    </section>
+
+    <section class="cursos" data-aos="zoom-in" data-aos-delay="600">
+      <h2> Cursos Complementares</h2>
+      <p><strong>Auxiliar de Informática</strong> — 2025</p>
+      <p><strong>Jornada Full Stack Hashtag</strong> — 2025</p>
+    </section>
   </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

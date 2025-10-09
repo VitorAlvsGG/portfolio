@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio - Vitor Alves</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
   <nav>
     <ul>
@@ -17,12 +19,36 @@
     </ul>
   </nav>
 
-  <main>
-    <h1>Portfólio</h1>
+  <main data-aos="fade-up">
+    <h1 id="titulo"></h1>
     <p>Confira todos os meus projetos:</p>
-    <p><a href="https://vitoralvsgg.github.io/groovyBar/src/evento.html" target="_blank">Groovy Bar</a> – Um site temático de bar estilizado com HTML,CSS e JavaScript.</p>
-    <p><a href="https://vitoralvsgg.github.io/Lar-Internacao" target="_blank">Lar internações</a> - Um site feito pra uma clinica especializada em captar pessoas e levar para casas de reablitações, totalmente feito em HTML,CSS e JavaScript.</p>
-    <p><a href="https://star-wars-ten-theta.vercel.app" target="_blank">Site interativo star wars</a> - Um site totalmente feito em HTML,CSS e JavaScript; Um site interativo feito pra buscas de planetas no star wars, esse Site usa uma API publica.</p>
+
+    <div class="projetos">
+      <div class="projeto-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Groovy Bar </h3>
+        <p>Um site temático de bar estilizado com HTML, CSS e JavaScript.</p>
+        <a href="https://vitoralvsgg.github.io/groovyBar/src/evento.html" target="_blank">Visitar projeto</a>
+      </div>
+
+      <div class="projeto-card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Lar Internações </h3>
+        <p>Site de uma clínica especializada em reabilitação, feito com HTML, CSS e JavaScript.</p>
+        <a href="https://vitoralvsgg.github.io/Lar-Internacao" target="_blank">Visitar projeto</a>
+      </div>
+
+      <div class="projeto-card" data-aos="zoom-in" data-aos-delay="600">
+        <h3>Star Wars</h3>
+        <p>Site interativo que usa uma API pública para buscas de planetas do universo Star Wars.</p>
+        <a href="https://star-wars-ten-theta.vercel.app" target="_blank">Visitar projeto</a>
+      </div>
+    </div>
   </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+

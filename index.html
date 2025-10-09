@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitor Alves - Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Biblioteca de animações ao rolar -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
   <nav>
     <ul>
@@ -16,12 +20,23 @@
     </ul>
   </nav>
 
-  <main>
-<img src="./src/eu1.jpg" alt="Foto de Vitor Alves" style="width: 200px; border-radius: 10px; margin-bottom: 20px;">
-    <h1>Sobre Mim</h1>
-    <p>Meu nome é Vitor Cunico, tenho 20 anos, e estou dando meus primeiros passos no mundo da tecnologia com a certeza de que posso evoluir muito e contribuir de verdade. Atualmente curso Análise e Desenvolvimento de Sistemas pela Uninter, e desde já venho buscando crescer, estudando por conta própria e me dedicando a formações como a Jornada Full Stack da Hashtag, onde aprendi sobre React, desenvolvimento front-end e back-end. <br>
-   Mesmo sem experiências anteriores na área de TI, já atuei em ambientes que exigem responsabilidade, proatividade e trabalho em equipe, como supermercados, áreas de produção e atendimento ao cliente. Levo comigo a vontade de aprender todos os dias, e acredito que essa é uma das maiores qualidades que posso oferecer.<br>
-    Estou buscando uma oportunidade para fazer a diferença. Quero contribuir com o que já sei, crescer com quem está ao meu lado e me desenvolver com ética, humildade e garra. Tenho plena consciência de que o caminho não é fácil, mas também sei que estou pronto para dar o melhor de mim e aprender com cada desafio.</p>
+  <main data-aos="fade-up">
+    <img src="./src/eu1.jpg" alt="Foto de Vitor Alves" class="foto ">
+    <h1 id="titulo"></h1>
+
+    <p>
+      Meu nome é <strong>Vitor Alves</strong>, tenho 20 anos, e estou dando meus primeiros passos no mundo da tecnologia com a certeza de que posso evoluir muito e contribuir de verdade. Atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong> pela Uninter, e desde já venho buscando crescer, estudando por conta própria e me dedicando a formações como a <strong>Jornada Full Stack da Hashtag</strong>, onde aprendi sobre React, desenvolvimento front-end e back-end. <br><br>
+
+      Mesmo sem experiências anteriores na área de TI, já atuei em ambientes que exigem responsabilidade, proatividade e trabalho em equipe, como supermercados, áreas de produção e atendimento ao cliente. Levo comigo a vontade de aprender todos os dias, e acredito que essa é uma das maiores qualidades que posso oferecer.<br><br>
+
+      Estou buscando uma oportunidade para fazer a diferença. Quero contribuir com o que já sei, crescer com quem está ao meu lado e me desenvolver com ética, humildade e garra. Tenho plena consciência de que o caminho não é fácil, mas também sei que estou pronto para dar o melhor de mim e aprender com cada desafio.
+    </p>
   </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

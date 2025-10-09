@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato - Vitor Alves</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contato.css" />
 </head>
 <body>
   <nav>
@@ -13,43 +13,52 @@
       <li><a href="index.html">Sobre Mim</a></li>
       <li><a href="formacao.html">Formação</a></li>
       <li><a href="portfolio.html">Portfólio</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="contato.html" class="ativo">Contato</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main class="container">
     <h1>Contato</h1>
-    <form id="Contato"action="https://formsubmit.co/vitor.alves.versiani@gmail.com" method="POST">
-        <input 
-            type="text" 
-            id="Nome" 
-            name="name" 
-            placeholder="Nome completo" 
-            required 
-        />
 
-        <input 
-            type="email" 
-            id="Email" 
-            name="email" 
-            placeholder="Seu melhor e-mail" 
-            required 
-        />
+    <form id="Contato" action="https://formsubmit.co/vitor.alves.versiani@gmail.com" method="POST">
+      <input 
+        type="text" 
+        id="Nome" 
+        name="name" 
+        placeholder="Nome completo" 
+        required
+      />
 
-        <textarea 
-            id="Mensagem" 
-            name="message" 
-            rows="6" 
-            placeholder="Escreva sua mensagem" 
-            required
-        ></textarea>
+      <input 
+        type="email" 
+        id="Email" 
+        name="email" 
+        placeholder="Seu melhor e-mail" 
+        required
+      />
 
-        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-        <input type="hidden" name="_subject" value="Novo contato via site">
-        <input type="hidden" name="_captcha" value="false">
-       <button type="submit" id="Enviar">Enviar</button>
+      <textarea 
+        id="Mensagem" 
+        name="message" 
+        rows="6" 
+        placeholder="Escreva sua mensagem..." 
+        required
+      ></textarea>
+
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+      <input type="hidden" name="_subject" value="Novo contato via site">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" id="Enviar">Enviar</button>
     </form>
-    <p>Número de contato: (41) 99108-5080</p>
+
+    <div class="info-contato">
+      <p><strong>Número de contato:</strong> (41) 99108-5080</p>
+      <p><strong>Email direto:</strong> vitor.alves.versiani@gmail.com</p>
+    </div>
   </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
